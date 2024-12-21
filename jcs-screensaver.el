@@ -57,7 +57,7 @@
 
 ;;;###autoload
 (defun jcs-screensaver (&rest _)
-  "Toggle screen saver."
+  "Toggle screensaver."
   (interactive)
   (let ((buf (get-buffer "*snow*")))
     (cond (buf
