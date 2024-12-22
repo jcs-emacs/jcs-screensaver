@@ -16,5 +16,6 @@
 (depends-on "emacs" "26.3")
 (depends-on "snow")
 (depends-on "zoom-window")
+(depends-on "msgu")
 
 (setq network-security-level 'low)  ; see https://github.com/jcs090218/setup-emacs-windows/issues/156#issuecomment-932956432
