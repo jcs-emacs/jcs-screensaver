@@ -6,7 +6,7 @@
 ;; Maintainer: Shen, Jen-Chieh <jcs090218@gmail.com>
 ;; URL: https://github.com/jcs-emacs/jcs-screensaver
 ;; Version: 0.1.0
-;; Package-Requires: ((emacs "26.3") (snow "0.1") (zoom-window "0.06"))
+;; Package-Requires: ((emacs "26.3") (snow "0.1") (zoom-window "0.06") (msgu "0.1.0"))
 ;; Keywords: tools
 
 ;; This file is not part of GNU Emacs.
@@ -33,6 +33,7 @@
 
 (require 'snow)
 (require 'zoom-window)
+(require 'msgu)
 
 (defgroup jcs-screensaver nil
   "A screensaver for jcs-emacs."
@@ -50,7 +51,7 @@
 
 (defun jcs-screensaver--turn-on ()
   "Turn on screensaver."
-  (snow)
+  (msgu-silent (snow))
   (unless (zoom-window--enable-p)
     (zoom-window-zoom))
   (add-hook 'pre-command-hook #'jcs-screensaver--turn-off))
