@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "jcs-screensaver"
          "0.1.0"
          "A screensaver for jcs-emacs")
